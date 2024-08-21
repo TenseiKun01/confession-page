@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-image:url(heart-tree-love-for-nature-red-landscape-at-sunset-generativ-ai-photo.jpg)
+        }
+        #message {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #love-image {
+            display: none;
+            width: 200px;
+            margin-top: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+
+<div id="message">
+    Ada sesuatu yang ingin aku katakan kepadamu...
+</div>
+<button onclick="showConfession()">Klik untuk Melihat Pesan</button>
+<img id="love-image" src="Lovee.png" alt="Love Image">
+<script>
+    function showConfession() {
+        const message = document.getElementById('message');
+        const loveImage = document.getElementById('love-image');
+        
+        message.innerHTML = "Aku suka padamu, dan aku harap kamu tak membenciku.";
+        loveImage.style.display = 'block';
+    }
+</script>
+
+
+</body>
+</html>
